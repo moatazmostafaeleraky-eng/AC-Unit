@@ -2,13 +2,15 @@
 
 An interactive engineering simulator of the **Mitsubishi Electric MSZ-AP35VGK** indoor unit and **MUZ-AP35VG** outdoor unit (R32, 3.5 kW cooling / 4.0 kW heating) running as one coupled system: room, air distribution, refrigeration cycle, inverter control and performance, with a live 3D model.
 
+**Live:** https://moatazmostafaeleraky-eng.github.io/AC-Unit/
+
 > This is an independent study built from published Mitsubishi Electric documents. It is not a Mitsubishi Electric product. Internal geometry, control thresholds and dynamics that are not published are modelled and labelled as such everywhere in the app.
 
 ## Run it on Windows
 
 You need **Node.js 18 or newer** ([nodejs.org](https://nodejs.org), LTS installer, default options).
 
-1. Download or clone this repository and open the `ap35-bench-study` folder.
+1. Download or clone this repository (green **Code** button → *Download ZIP*, then extract it).
 2. Double-click **`start-windows.bat`**.
    - The production build (`dist/`) is committed, so the first start needs no install. If `dist/` is missing, the script runs `npm install` and `npm run build` once.
    - The browser opens at <http://localhost:4173/>. Leave the black console window open while you use the app, and close it to stop.
@@ -17,7 +19,7 @@ You need **Node.js 18 or newer** ([nodejs.org](https://nodejs.org), LTS installe
 From a terminal (PowerShell or cmd) the same steps are:
 
 ```bat
-cd ap35-bench-study
+cd AC-Unit
 node serve.mjs 4173 --open
 ```
 
@@ -28,7 +30,7 @@ If port 4173 is busy, run `node serve.mjs 4180 --open` instead.
 ## Other platforms
 
 ```bash
-cd ap35-bench-study
+cd AC-Unit
 npm install
 npm run build && npm run serve      # http://localhost:4173/
 # or: npm run dev                   # http://localhost:5173/
